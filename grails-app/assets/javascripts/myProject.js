@@ -2,8 +2,16 @@ function validateRegisterForm() {
     var firstPassword = document.getElementById("password").value;
     var secondPassword = document.getElementById("confirmPassword").value;
     var email = document.getElementById("email").value;
+    var nameFisrt = document.getElementById("firstName").value;
+    var nameSecond = document.getElementById("lastName").value;
 
-    if (email == null || email === "") {
+    if (nameFisrt == null || nameFisrt === "") {
+        alert("firstName is required");
+        return false;
+    }else if (nameSecond == null || nameSecond === "") {
+        alert("lastName is required");
+        return false;
+    } else if (email == null || email === "") {
         alert("Email is required");
         return false;
     } else if (firstPassword == null || firstPassword === "") {

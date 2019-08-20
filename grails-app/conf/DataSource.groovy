@@ -18,8 +18,11 @@ hibernate {
 environments {
     development {
         dataSource {
+            driverClassName = "com.mysql.jdbc.Driver"
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+            url = "jdbc:mysql://localhost:3306/learningzone?useSSL=false"
+            username = "root"
+            password = "root"
         }
     }
     test {

@@ -21,15 +21,15 @@
 
 <body>
 <div style="text-align:center">
-
+    <form action="/MyFirstApplication/public/registration" method="post" name="register" id="register" >
     <g:form name="login" controller="public" action="register">
         <fieldset>
             <legend>User Information:</legend>
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username">
+            <input type="text" class="form-control-sm" id="username" name="username" size="35">
             <br>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
+            <input type="password" class="form-control-sm" id="password" name="password" size="35">
             <br>
 
             <div id="lower">
